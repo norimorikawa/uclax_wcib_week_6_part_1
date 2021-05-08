@@ -21,12 +21,12 @@ for(let i = 1; i <= 5; i++) {
 
 btn.onclick = function() {
   const btnClass = btn.getAttribute('class');
-  if(btnClass === '.dark-button') {
-    btn.setAttribute('class','.light');
+  if(btnClass === 'dark-button') {
+    btn.setAttribute('class','light-button');
     btn.textContent = 'Lighten';
     overlay.style.backgroundColor = 'rgba(0,0,0,0.5)';
   } else {
-    btn.setAttribute('class','.dark-button');
+    btn.setAttribute('class','dark-button');
     btn.textContent = 'Darken';
     overlay.style.backgroundColor = 'rgba(0,0,0,0)';
   }
